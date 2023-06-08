@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        /* .flexExample{
+            background-color: rgb(255, 217, 0);
+        } */
+
+        .flexExample .marginex{
+            margin-left: 80px;
+            margin-right: 80px;
+        }
+
+        .flexExample .padding{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .flexExample .flexbox{
+            display: flex;
+            gap: 30px;
+        }
+
+        .flexExample .flexbox .flex-left{
+            flex: 1;
+        }
+
+        .flexExample .flexbox .flex-left .left1 {
+            color: gray;
+            font-weight: bold;
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        .flexExample .flexbox .flex-left h1 {
+            padding: 20px 0px;
+            font-size: 40px;
+        }
+
+        .flexExample .flexbox .flex-left .left2 {
+            color: gray;
+            /* letter-spacing: 1px; */
+            padding-bottom: 20px;
+            font-size: x-large;
+        }
+
+        .flexExample .flexbox .flex-left button {
+            height: 46px;
+            width: 120px;
+            background-color: green;
+            color: aliceblue;
+            border: 3px solid transparent;
+            font-weight: 700;
+            border-radius: 9px;
+        }
+
+        .flexExample .flexbox .flex-right {
+            flex: 1;
+        }
+
+        .flexExample .flexbox .flex-right img {
+            height: auto;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="flexExample">
+        <div class="marginex">
+            <div class="padding">
+                <div class="flexbox">
+                    <div class="flex-left">
+                        <p class="left1">locally Growm-100% Natural</p>
+                        <h1>The Huge veritey of the freshest fruits and vegetables</h1>
+                        <p class="left2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, eligendi ipsum
+                            odio accusamus
+                            amet iusto necessitatibus sequi est expedita laborum et vel fugit neque quis aut. Magni
+                            labore aperiam at?Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias cupiditate
+                            hic placeat fugiat enim blanditiis. Sit fugiat blanditiis tenetur doloremque. Velit natus
+                            aspernatur dignissimos a? Itaque minus veritatis labore tempora.</p>
+                        <button>Read More</button>
+                    </div>
+                    <div class="flex-right">
+                        <img src="img.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

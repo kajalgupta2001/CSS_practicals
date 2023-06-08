@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul{
+            list-style: none;
+        }
+        .navbar{
+            background-color:chocolate;
+        }
+        .navbar ul{
+            display: flex;
+        }
+        .navbar ul li{
+            padding: 20px;
+        }
+        .navbar ul li a{
+            color: white;
+        }
+        .Disnav .menus{
+            display: none;
+        }
+        .Disnav{
+            position: relative;
+        }
+        .Disnav:hover .menus{
+            display: block;
+            background-color: black;
+            position: absolute;
+            left: 16px;
+            border-radius: 5px;
+            top: 52px;
+            height: auto;
+            width: 120px;
+        }
+        .Disnav .menus li{
+            padding: 10px;
+        }
+        .Disnav span{
+            color: white;
+            font-size: 12px;
+            transition: 0.5s all ease;
+        }
+        .Disnav:hover span{
+            transform: rotateX(180deg);
+        }
+        .Disnav .cube{
+            height: 20px;
+            width: 20px;
+            background-color: rgb(14, 11, 11);
+            position: absolute;
+            top: -10px;
+            left: 30px;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="mainNav">
+            <li><a href="">Home</a></li>
+            <li class="Disnav"><a href="">About</a>
+                <span class="fa-solid fa-angle-down"></span>
+                     <ul class="menus">
+                        <div class="cube"></div>
+                        <li><a href="">About 1</a></li>
+                        <li><a href="">About 2</a></li>
+                        <li><a href="">About 3</a></li>
+                     </ul>
+            </li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::before {
+            content: "";
+        }
+
+        h1::after {
+            content: "";
+        }
+        .mydiv1{
+            height: auto;
+            width: 200px;
+            border: 5px solid black;
+            padding: 10px;
+        }
+        .mydiv1::first-letter{
+            font-size: 30px;
+        }
+        .mydiv1::first-line{
+            color: rgb(30, 16, 225);
+        }
+        .mydiv1::selection{
+            background-color: black;
+            color: aliceblue;
+        }
+        li::marker{
+            color: blue;
+        }
+        input::placeholder{
+            text-align: center;
+            color: rgb(15, 15, 15);
+        }
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            padding: 5px;
+        }
+        tr:nth-child(1){
+            background-color: aquamarine;
+        }
+        tr:nth-child(even){
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello world</h1>
+    <div class="mydiv1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At velit, maxime harum facilis
+        voluptatum blanditiis nesciunt dolor laborum assumenda! Neque molestias voluptas deserunt qui. Ex laboriosam
+        harum quam atque nam?</div>
+        <ul>
+            <li>list 1</li>
+            <li>list 2</li>
+        </ul>
+
+<br><br>
+<input type="text" placeholder="enter name">
+<br><br>
+<table border="1">
+    <tr>
+        <td>Name</td>
+        <td>Age</td>
+        <td>city</td>
+    </tr>
+    <tr>
+        <td>xyz</td>
+        <td>67</td>
+        <td>surat</td>
+    </tr>
+    <tr>
+        <td>xyz</td>
+        <td>67</td>
+        <td>surat</td>
+    </tr>
+</table>
+</body>
+
+</html>

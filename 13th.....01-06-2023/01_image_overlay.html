@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .imgoverlay{
+            height: 300px;
+            width: 300px;
+            margin: auto;
+            border: 1px solid red;
+            position: relative;
+        }
+        .imgoverlay img{
+            height: 300px;
+            width: 300px;
+        }
+        .imgoverlay .text{
+            text-align: center;
+            background-color: brown;
+            /* top: 0; */
+            /* bottom: 0; */
+            /* left: 0; */
+            right: 0;
+            overflow: hidden;
+            transition: 1s all ease-in;
+            height: 100%;
+            width: 0;
+            position: absolute;
+        }
+        .imgoverlay:hover .text{
+            /* height: 30%; */
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="imgoverlay">
+        <img src="image_overlay.jpg" alt="">
+        <div class="text">
+            <h1>KRISHNA</h1>
+        </div>
+    </div>
+</body>
+</html>
